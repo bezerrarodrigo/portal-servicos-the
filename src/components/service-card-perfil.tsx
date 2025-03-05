@@ -1,31 +1,19 @@
-import { BuildingIcon, House, User } from "lucide-react";
+import { BuildingIcon, House, User } from 'lucide-react'
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-
-interface MenuItem {
-  text: string;
-  href: string;
-}
-
-interface ServiceCardProps {
-  title: string;
-  subtitle: string;
-  servicosImovel: MenuItem[];
-  servicosEmpresa: MenuItem[];
-  servicosCidadao: MenuItem[];
-}
+} from '@/components/ui/card'
+import { ServiceCardPerfilProps } from '@/lib/types'
 
 export function ServiceCardPerfil({
   title,
@@ -33,7 +21,7 @@ export function ServiceCardPerfil({
   servicosImovel,
   servicosEmpresa,
   servicosCidadao,
-}: ServiceCardProps) {
+}: ServiceCardPerfilProps) {
   return (
     <Card className="rounded-xs">
       <CardHeader className="border-b pb-2 border-blue-900">
@@ -113,5 +101,5 @@ export function ServiceCardPerfil({
         </Accordion>
       </CardContent>
     </Card>
-  );
+  )
 }

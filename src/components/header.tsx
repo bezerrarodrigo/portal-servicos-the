@@ -1,6 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { MenuIcon, User } from "lucide-react";
+import { Separator } from '@radix-ui/react-separator'
+import { MenuIcon, User } from 'lucide-react'
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -8,8 +10,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import { Separator } from "@radix-ui/react-separator";
+} from '@/components/ui/sheet'
 
 export function Header() {
   return (
@@ -108,5 +109,5 @@ export function Header() {
         </Button>
       </div>
     </header>
-  );
+  )
 }
