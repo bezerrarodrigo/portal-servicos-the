@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { Header } from '@/components/header'
 import { HeroSearch } from '@/components/hero-search'
 import { ServiceCardOnline } from '@/components/service-card-online'
 import { ServiceCardPerfil } from '@/components/service-card-perfil'
@@ -18,7 +17,6 @@ import {
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col antialiased">
         <div className="flex flex-1 flex-col space-y-6 py-10">
           <div className="flex w-full items-center justify-center px-4">
