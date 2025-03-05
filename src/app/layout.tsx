@@ -4,7 +4,7 @@ import { inter } from "@/lib/fonts";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Portal de Serviços",
+  title: "Portal de Serviços | Teresina",
   description: "Prefeitura de Teresina",
 };
 

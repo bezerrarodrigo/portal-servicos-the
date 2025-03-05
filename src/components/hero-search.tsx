@@ -37,7 +37,7 @@ export function HeroSearch() {
         </div>
       </div>
       <div className="flex h-14 items-center justify-center bg-blue-300">
-        <h3 className="text-md font-bold text-blue-900 md:text-2xl">
+        <h3 className="font-bold text-blue-900 lg:text-lg text-sm">
           Acesse o Portal de Parcelamento e Negociação
         </h3>
       </div>
