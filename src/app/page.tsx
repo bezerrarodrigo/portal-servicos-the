@@ -1,9 +1,10 @@
-import { Header } from "@/components/header";
-import { HeroSearch } from "@/components/hero-search";
-import { ServiceCardTributos } from "@/components/service-card-tributo";
-import { ServiceCardPerfil } from "@/components/service-card-perfil";
-import { ServiceCardOnline } from "@/components/service-card-online";
-import Image from "next/image";
+import Image from 'next/image'
+
+import { Header } from '@/components/header'
+import { HeroSearch } from '@/components/hero-search'
+import { ServiceCardOnline } from '@/components/service-card-online'
+import { ServiceCardPerfil } from '@/components/service-card-perfil'
+import { ServiceCardTributos } from '@/components/service-card-tributo'
 import {
   cidadaoItems,
   empresaItens,
@@ -12,7 +13,7 @@ import {
   issItems,
   itbiItems,
   taxaItems,
-} from "@/lib/data";
+} from '@/lib/data'
 
 export default function Home() {
   return (
@@ -55,6 +56,13 @@ desejado para acesso específico."
           </div>
         </div>
       </main>
+      <footer className="flex items-center p-8 h-10 bg-gray-700 justify-center">
+        <p className="text-xs text-center md:text-sm text-gray-400">
+          © {new Date().getFullYear()} PMT, Todos os direitos reservados.{' '}
+          <br />
+          Desenvolvido por DSF - Inteligência Tributária Municipal.
+        </p>
+      </footer>
     </>
-  );
+  )
 }

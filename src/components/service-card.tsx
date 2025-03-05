@@ -1,11 +1,4 @@
-import { ReactNode } from "react";
-
-interface ServiceCardProps {
-  title: string;
-  subtitle: string;
-  icon: ReactNode;
-  href: string;
-}
+import { ServiceCardProps } from '@/lib/types'
 
 export function ServiceCard({ title, subtitle, icon, href }: ServiceCardProps) {
   return (
@@ -18,5 +11,5 @@ export function ServiceCard({ title, subtitle, icon, href }: ServiceCardProps) {
         </div>
       </a>
     </div>
-  );
+  )
 }
