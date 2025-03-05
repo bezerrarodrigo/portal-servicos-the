@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import React from 'react'
 
+import { Header } from '@/components/header'
 import { inter } from '@/lib/fonts'
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
