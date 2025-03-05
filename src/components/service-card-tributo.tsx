@@ -1,32 +1,19 @@
-import { Building2, HandCoins, MapPinned, ReceiptText } from "lucide-react";
+import { Building2, HandCoins, MapPinned, ReceiptText } from 'lucide-react'
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-
-interface MenuItem {
-  text: string;
-  href: string;
-}
-
-interface ServiceCardProps {
-  title: string;
-  subtitle: string;
-  servicosIss: MenuItem[];
-  servicosIptu: MenuItem[];
-  servicosItbi: MenuItem[];
-  servicosTaxas: MenuItem[];
-}
+} from '@/components/ui/card'
+import { ServiceCardTributosProps } from '@/lib/types'
 
 export function ServiceCardTributos({
   title,
@@ -35,7 +22,7 @@ export function ServiceCardTributos({
   servicosIptu,
   servicosItbi,
   servicosTaxas,
-}: ServiceCardProps) {
+}: ServiceCardTributosProps) {
   return (
     <Card className="rounded-xs h-auto">
       <CardHeader className="border-b pb-2 border-emerald-500">
@@ -135,5 +122,5 @@ export function ServiceCardTributos({
         </Accordion>
       </CardContent>
     </Card>
-  );
+  )
 }
