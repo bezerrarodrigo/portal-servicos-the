@@ -32,8 +32,8 @@ export function ServiceCardTributos({
       <CardContent>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>
-              <span className="flex gap-2 font-light">
+            <AccordionTrigger className="hover:no-underline cursor-pointer">
+              <span className="flex gap-2 font-light text-xs">
                 <ReceiptText />
                 ISS - Imposto Sobre Serviços de Qualquer Natureza
               </span>
@@ -43,8 +43,9 @@ export function ServiceCardTributos({
                 {servicosIss?.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-gray-500 hover:underline"
+                      className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -54,19 +55,20 @@ export function ServiceCardTributos({
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>
-              <span className="flex gap-2 font-light">
+            <AccordionTrigger className="hover:no-underline cursor-pointer">
+              <span className="flex gap-2 font-light text-xs">
                 <MapPinned />
                 IPTU - Imposto Predial Territorial Urbano
               </span>
             </AccordionTrigger>
             <AccordionContent>
               <ul className="mt-2 space-y-1">
-                {servicosItbi?.map((item, index) => (
+                {servicosIptu?.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-gray-500 hover:underline"
+                      className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -76,19 +78,20 @@ export function ServiceCardTributos({
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>
-              <span className="flex gap-2 font-light">
+            <AccordionTrigger className="hover:no-underline cursor-pointer">
+              <span className="flex gap-2 font-light text-xs">
                 <Building2 />
                 ITBI - Imposto sobre Transmissão de Bens Imóveis
               </span>
             </AccordionTrigger>
             <AccordionContent>
               <ul className="mt-2 space-y-1">
-                {servicosIptu?.map((item, index) => (
+                {servicosItbi?.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-gray-500 hover:underline"
+                      className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -98,7 +101,7 @@ export function ServiceCardTributos({
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline cursor-pointer">
               <span className="flex gap-2 font-light">
                 <HandCoins />
                 Taxas
@@ -109,8 +112,9 @@ export function ServiceCardTributos({
                 {servicosTaxas?.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-gray-500 hover:underline"
+                      className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>

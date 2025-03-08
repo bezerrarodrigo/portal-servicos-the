@@ -38,7 +38,12 @@ export function HeroSearch() {
       </div>
       <div className="flex h-14 items-center justify-center bg-blue-300">
         <h3 className="font-bold text-blue-900 lg:text-lg text-sm">
-          Acesse o Portal de Parcelamento e Negociação
+          <a
+            href="https://portal.teresina.pi.gov.br/portal-web/paginas/inicial/"
+            target="_blank"
+          >
+            Acesse o Portal de Parcelamento e Negociação
+          </a>
         </h3>
       </div>
     </>
