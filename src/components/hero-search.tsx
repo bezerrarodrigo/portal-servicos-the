@@ -1,4 +1,6 @@
-import { Input } from '@/components/ui/input'
+'use client'
+
+import { CommandMenu } from '@/components/command-menu'
 
 export function HeroSearch() {
   return (
@@ -8,31 +10,8 @@ export function HeroSearch() {
           <h1 className="text-2xl md:text-4xl font-bold text-white">
             Portal de Serviços
           </h1>
-          <Input
-            className="max-w-[600px] rounded-sm border-none bg-white"
-            placeholder="Busca rápida"
-          />
-          <div className="flex flex-col gap-4 text-white">
-            <h2 className="text-center font-semibold text-white">
-              Serviços mais acessados
-            </h2>
-            <ul className="flex flex-col">
-              <a className="hover:underline" href="#">
-                Certidão Negativa de IPTU
-              </a>
-              <a className="hover:underline" href="#">
-                Certidão Positiva com Efeito de Negativa IPTU
-              </a>
-              <a className="hover:underline" href="#">
-                Certidão Conjunta Negativa e da Dívida Ativa
-              </a>
-              <a className="hover:underline" href="#">
-                Emissão de guia ISS/Taxas
-              </a>
-              <a className="hover:underline" href="#">
-                Emissão de Guia IPTU/COSIP/TCRD
-              </a>
-            </ul>
+          <div className="w-1/2">
+            <CommandMenu />
           </div>
         </div>
       </div>
