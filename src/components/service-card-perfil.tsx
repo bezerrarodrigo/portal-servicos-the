@@ -44,6 +44,7 @@ export function ServiceCardPerfil({
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -67,6 +68,7 @@ export function ServiceCardPerfil({
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -90,6 +92,7 @@ export function ServiceCardPerfil({
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>

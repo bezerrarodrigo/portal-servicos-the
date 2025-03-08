@@ -45,6 +45,7 @@ export function ServiceCardTributos({
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -62,11 +63,12 @@ export function ServiceCardTributos({
             </AccordionTrigger>
             <AccordionContent>
               <ul className="mt-2 space-y-1">
-                {servicosItbi?.map((item, index) => (
+                {servicosIptu?.map((item, index) => (
                   <li key={index}>
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -84,11 +86,12 @@ export function ServiceCardTributos({
             </AccordionTrigger>
             <AccordionContent>
               <ul className="mt-2 space-y-1">
-                {servicosIptu?.map((item, index) => (
+                {servicosItbi?.map((item, index) => (
                   <li key={index}>
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
@@ -111,6 +114,7 @@ export function ServiceCardTributos({
                     <a
                       className="text-gray-500 hover:text-foreground text-xs"
                       href={item.href}
+                      target="_blank"
                     >
                       {item.text}
                     </a>
