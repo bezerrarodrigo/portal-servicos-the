@@ -1,6 +1,20 @@
+'use client'
+
+import { useState } from 'react'
+
+import {
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from '@/components/ui/command'
 import { Input } from '@/components/ui/input'
 
 export function HeroSearch() {
+  const [open, setOpen] = useState(false)
+
   return (
     <>
       <div className="flex m-0 bg-blue-700">
@@ -9,31 +23,58 @@ export function HeroSearch() {
             Portal de Serviços
           </h1>
           <Input
-            className="max-w-[600px] rounded-sm border-none bg-white"
-            placeholder="Busca rápida"
+            className="bg-white w-full md:w-1/2"
+            placeholder="Busca rápida por serviço..."
+            onFocus={() => setOpen(true)}
           />
-          <div className="flex flex-col gap-4 text-white">
-            <h2 className="text-center font-semibold text-white">
-              Serviços mais acessados
-            </h2>
-            <ul className="flex flex-col">
-              <a className="hover:underline" href="#">
-                Certidão Negativa de IPTU
-              </a>
-              <a className="hover:underline" href="#">
-                Certidão Positiva com Efeito de Negativa IPTU
-              </a>
-              <a className="hover:underline" href="#">
-                Certidão Conjunta Negativa e da Dívida Ativa
-              </a>
-              <a className="hover:underline" href="#">
-                Emissão de guia ISS/Taxas
-              </a>
-              <a className="hover:underline" href="#">
-                Emissão de Guia IPTU/COSIP/TCRD
-              </a>
-            </ul>
-          </div>
+          <CommandDialog open={open} onOpenChange={setOpen}>
+            <CommandInput placeholder="Digite um comando ou pesquise..." />
+            <CommandList>
+              <CommandEmpty>No results found.</CommandEmpty>
+              <CommandGroup heading="Sugestões">
+                <CommandItem>
+                  <a
+                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CNDIPTU"
+                    target="_blank"
+                  >
+                    Certidão Negativa de IPTU
+                  </a>
+                </CommandItem>
+                <CommandItem>
+                  <a
+                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CPCENIPTU"
+                    target="_blank"
+                  >
+                    Certidão Positiva com Efeito de Negativa IPTU
+                  </a>
+                </CommandItem>
+                <CommandItem>
+                  <a
+                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA"
+                    target="_blank"
+                  >
+                    Certidão Conjunta Negativa e da Dívida Ativa
+                  </a>
+                </CommandItem>
+                <CommandItem>
+                  <a
+                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOEMPRESA"
+                    target="_blank"
+                  >
+                    Emissão de guia ISS/Taxas
+                  </a>
+                </CommandItem>
+                <CommandItem>
+                  <a
+                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOIMOVEL"
+                    target="_blank"
+                  >
+                    Emissão de Guia IPTU/COSIP/TCRD
+                  </a>
+                </CommandItem>
+              </CommandGroup>
+            </CommandList>
+          </CommandDialog>
         </div>
       </div>
       <div className="flex h-14 items-center justify-center bg-blue-300">
