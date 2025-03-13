@@ -95,18 +95,30 @@ const iptuItems = [
   },
   {
     text: 'Portal do IPTU',
-    href: 'http://certidaonum.semf.teresina.pi.gov.br/',
+    href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/iptu/',
   },
   {
     text: 'Portal de Negociação',
     href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/inicial/',
+  },
+  {
+    text: 'Legislação',
+    href: 'http://legis.teresina.pi.gov.br/',
   },
 ]
 
 const itbiItems = [
   {
     text: 'Emitir Guia ITBI-e',
+    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/guiaitbi/emiteGuiaPortalList.jsf',
+  },
+  {
+    text: 'Consultar ITBI-e Legado (sistema anterior)',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=CONSULTARITBI',
+  },
+  {
+    text: 'Consultar Certidão Negativa ITBI-e Legado (sistema anterior)',
+    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CITBI',
   },
   {
     text: 'Emitir Guia SIAT',
@@ -118,7 +130,7 @@ const itbiItems = [
   },
   {
     text: 'Certidão Negativa de Transferência Imobiliária',
-    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CITBI',
+    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/certidao/certidaoPortalData.jsf?faces-redirect=true',
   },
   {
     text: 'Reemitir Certidão/Declaração',
@@ -127,6 +139,10 @@ const itbiItems = [
   {
     text: 'Validar Certidão/Declaração',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=VALIDARCERTIDAO',
+  },
+  {
+    text: 'Legislação',
+    href: 'http://legis.teresina.pi.gov.br/',
   },
 ]
 
@@ -175,6 +191,10 @@ const taxaItems = [
     text: 'Sistema de Licenciamento - SLIC',
     href: 'http://slic.semf.teresina.pi.gov.br/',
   },
+  {
+    text: 'Legislação',
+    href: 'http://legis.teresina.pi.gov.br/',
+  },
 ]
 
 const imovelItens = [
@@ -206,7 +226,7 @@ const imovelItens = [
   },
   {
     text: 'Sistema ITBI-e',
-    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/portal/index.html',
+    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/guiaitbi/emiteGuiaPortalList.jsf',
   },
   {
     text: 'Declaração de Inexistência de Imóvel',
@@ -222,7 +242,7 @@ const imovelItens = [
   },
   {
     text: 'Portal do IPTU',
-    href: 'http://certidaonum.semf.teresina.pi.gov.br/',
+    href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/iptu/',
   },
   {
     text: 'Portal de Negociação',
