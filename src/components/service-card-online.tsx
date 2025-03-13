@@ -74,7 +74,7 @@ const onlineItems = [
     title: 'Portal IPTU',
     subtitle: 'Emissão de guia e memória de\n' + 'cálculo',
     icon: <House />,
-    href: 'http://certidaonum.semf.teresina.pi.gov.br/',
+    href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/iptu/',
   },
   {
     title: 'Declaração de Rua',
@@ -121,7 +121,7 @@ const onlineItems = [
     title: 'SEI - Solicitar acesso',
     subtitle: 'Solicitar Acesso ao SEI',
     icon: <MonitorCheck />,
-    href: 'https://pmt.pi.gov.br/teresinensedigital/',
+    href: 'https://sei.pmt.pi.gov.br/sei/controlador_externo.php?acao=usuario_externo_avisar_cadastro&id_orgao_acesso_externo=0',
   },
 ]
 
