@@ -7,7 +7,6 @@ import {
   HousePlus,
   Landmark,
   Mail,
-  Map,
   MonitorCheck,
   MonitorUpIcon,
   NotepadText,
@@ -77,12 +76,6 @@ const onlineItems = [
     href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/iptu/',
   },
   {
-    title: 'Declaração de Rua',
-    subtitle: 'Solicitar declaração de rua',
-    icon: <Map />,
-    href: '#',
-  },
-  {
     title: 'Coleta de Lixo',
     subtitle: 'Solicitar coleta de lixo extra domiciliar',
     icon: <Truck />,
@@ -106,7 +99,7 @@ const onlineItems = [
     title: 'Coleta de Poda',
     subtitle: 'Solicitar coleta',
     icon: <Trees />,
-    href: '#',
+    href: 'http://coletapoda.semf.teresina.pi.gov.br/',
   },
   {
     title: 'SEI - Acesso usuário externo',

@@ -24,7 +24,7 @@ const issItems = [
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA',
   },
   {
-    text: 'Certidão Conjunta Positiva de Débitos Municipais e da Dívida Ativa do Município',
+    text: 'Certidão Conjunta Positiva com Efeito de Negativa de Débitos Municipais e da Dívida Ativa do Município',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCPENDA',
   },
   {
@@ -166,9 +166,7 @@ const taxaItems = [
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA',
   },
   {
-    text:
-      'Certidão Conjunta Positiva de Débitos\n' +
-      'Municipais e da Dívida Ativa do Município',
+    text: 'Certidão Conjunta Positiva com Efeito de Negativa de Débitos Municipais e da Dívida Ativa do Município',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCPENDA',
   },
   {
@@ -254,15 +252,11 @@ const imovelItens = [
   },
   {
     text: 'Sistema de Coleta de Poda',
-    href: '#',
+    href: 'http://coletapoda.semf.teresina.pi.gov.br/',
   },
   {
     text: 'Certidão de Número',
     href: 'http://certidaonum.semf.teresina.pi.gov.br/',
-  },
-  {
-    text: 'Declaração de Rua',
-    href: '#',
   },
   {
     text: 'Construa Fácil',
@@ -292,16 +286,8 @@ const empresaItens = [
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=CADECO',
   },
   {
-    text:
-      'Certidão Conjunta Negativa de Débitos\n' +
-      'Municipais e da Dívida Ativa do Município',
+    text: 'Certidão Conjunta Positiva com Efeito de Negativa de Débitos Municipais e da Dívida Ativa do Município',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA',
-  },
-  {
-    text:
-      'Certidão Conjunta Negativa de Débitos\n' +
-      'Municipais e da Dívida Ativa do Município',
-    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCPENDA',
   },
   {
     text: 'Reemitir Certidão/Declaração',
@@ -348,8 +334,8 @@ const empresaItens = [
     href: 'https://desif.issdigitalthe.com.br/desif-web/paginas/portal/index.html#/',
   },
   {
-    text: 'Sistema de Poda',
-    href: '#',
+    text: 'Coleta de Poda',
+    href: 'http://coletapoda.semf.teresina.pi.gov.br/',
   },
   {
     text: 'Sistema Coleta de Lixo',
@@ -410,7 +396,7 @@ const cidadaoItems = [
   },
   {
     text: 'Portal do IPTU',
-    href: 'http://certidaonum.semf.teresina.pi.gov.br/',
+    href: 'https://portal.teresina.pi.gov.br/portal-web/paginas/iptu/',
   },
   {
     text: 'Portal de Negociação',
@@ -421,16 +407,12 @@ const cidadaoItems = [
     href: 'http://coletalixo.semf.teresina.pi.gov.br/',
   },
   {
-    text: 'Sistema de Coleta de Poda',
-    href: '#',
+    text: 'Coleta de Poda',
+    href: 'http://coletapoda.semf.teresina.pi.gov.br/',
   },
   {
     text: 'Certidão de Número',
     href: 'http://certidaonum.semf.teresina.pi.gov.br/',
-  },
-  {
-    text: 'Declaração de Rua',
-    href: '#',
   },
   {
     text: 'Construa Fácil',
@@ -439,6 +421,14 @@ const cidadaoItems = [
   {
     text: 'Cadastro como Tomador da Nota',
     href: 'https://www.issdigitalthe.com.br/NotaFiscal/',
+  },
+  {
+    text: 'Certidão Conjunta Negativa de Débitos Municipais e da Dívida Ativa do Município',
+    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA',
+  },
+  {
+    text: 'Certidão Conjunta Positiva com Efeito de Negativa de Débitos Municipais e da Dívida Ativa do Município',
+    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCPENDA',
   },
 ]
 
