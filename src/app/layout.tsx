@@ -9,6 +9,9 @@ import { inter } from '@/lib/fonts'
 export const metadata: Metadata = {
   title: 'Portal de Serviços | Teresina',
   description: 'Prefeitura de Teresina',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
