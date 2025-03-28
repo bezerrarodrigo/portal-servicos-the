@@ -61,7 +61,7 @@ const onlineItems = [
     subtitle:
       'Consulta Prévia, Constituição,\n' + 'Alteração, Baixa e Licenças',
     icon: <Globe />,
-    href: 'https://autenticacao.piauidigital.pi.gov.br/',
+    href: 'https://www.piauidigital.pi.gov.br/',
   },
   {
     title: 'Certidão de Número',
