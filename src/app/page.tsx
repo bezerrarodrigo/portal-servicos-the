@@ -28,19 +28,6 @@ export default function Home() {
             />
           </div>
           <HeroSearch />
-          <div className="flex justify-center px-4">
-            <a
-              href="https://portal.teresina.pi.gov.br/portal-web/paginas/inicial/"
-              target="_blank"
-            >
-              <Image
-                src="/bannerRefis.png"
-                alt="Banner Refis"
-                width={500}
-                height={400}
-              />
-            </a>
-          </div>
           <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-3">
             <ServiceCardTributos
               title="Serviços por Tributo"
