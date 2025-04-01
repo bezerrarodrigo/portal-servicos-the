@@ -30,7 +30,7 @@ export function HeroSearch() {
           <CommandDialog open={open} onOpenChange={setOpen}>
             <CommandInput placeholder="Digite um comando ou pesquise..." />
             <CommandList>
-              <CommandEmpty>No results found.</CommandEmpty>
+              <CommandEmpty>Sem resultados.</CommandEmpty>
               <CommandGroup heading="Sugestões">
                 <CommandItem>
                   <a
