@@ -11,6 +11,7 @@ import {
   CommandList,
 } from '@/components/ui/command'
 import { Input } from '@/components/ui/input'
+import { filteredServices } from '@/lib/allDataSearch'
 
 export function HeroSearch() {
   const [open, setOpen] = useState(false)
@@ -28,50 +29,19 @@ export function HeroSearch() {
             onFocus={() => setOpen(true)}
           />
           <CommandDialog open={open} onOpenChange={setOpen}>
-            <CommandInput placeholder="Digite um comando ou pesquise..." />
+            <CommandInput placeholder="Digite para pesquisar e clique na opção desejada..." />
             <CommandList>
               <CommandEmpty>Sem resultados.</CommandEmpty>
-              <CommandGroup heading="Sugestões">
-                <CommandItem>
-                  <a
-                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CNDIPTU"
-                    target="_blank"
-                  >
-                    Certidão Negativa de IPTU
-                  </a>
-                </CommandItem>
-                <CommandItem>
-                  <a
-                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CPCENIPTU"
-                    target="_blank"
-                  >
-                    Certidão Positiva com Efeito de Negativa IPTU
-                  </a>
-                </CommandItem>
-                <CommandItem>
-                  <a
-                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCNDA"
-                    target="_blank"
-                  >
-                    Certidão Conjunta Negativa e da Dívida Ativa
-                  </a>
-                </CommandItem>
-                <CommandItem>
-                  <a
-                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOEMPRESA"
-                    target="_blank"
-                  >
-                    Emissão de guia ISS/Taxas
-                  </a>
-                </CommandItem>
-                <CommandItem>
-                  <a
-                    href="https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOIMOVEL"
-                    target="_blank"
-                  >
-                    Emissão de Guia IPTU/COSIP/TCRD
-                  </a>
-                </CommandItem>
+              <CommandGroup heading="Resultados">
+                {filteredServices.map((service) => {
+                  return (
+                    <CommandItem key={service.id}>
+                      <a href={service.href} target="_blank">
+                        {service.text}
+                      </a>
+                    </CommandItem>
+                  )
+                })}
               </CommandGroup>
             </CommandList>
           </CommandDialog>
