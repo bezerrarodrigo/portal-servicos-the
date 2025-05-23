@@ -72,9 +72,7 @@ const iptuItems = [
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CPCENIPTU',
   },
   {
-    text:
-      'Emitir Guia IPTU/TCRD-Taxa de Lixo/COSIP -\n' +
-      'Taxa de Iluminação Pública',
+    text: 'Consultar débitos / Emitir Guia: IPTU / TCRD-Taxa de Lixo / COSIP – Contribuição de Iluminação Pública',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOIMOVEL',
   },
   {
@@ -205,9 +203,7 @@ const imovelItens = [
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=IMO_CPCENIPTU',
   },
   {
-    text:
-      'Emitir Guia IPTU/TCRD-Taxa de Lixo/COSIP -\n' +
-      'Taxa de Iluminação Pública',
+    text: 'Consultar débitos / Emitir Guia: IPTU / TCRD-Taxa de Lixo / COSIP – Contribuição de Iluminação Pública',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=EXTRATOIMOVEL',
   },
   {
@@ -344,6 +340,10 @@ const empresaItens = [
   {
     text: 'Domicílio Tributário Eletrônico',
     href: 'https://dte.teresina.pi.gov.br/dec/paginas/portal/#/',
+  },
+  {
+    text: 'Emissão de Alvará Taxista/Mototaxistas',
+    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=MOB_ALVARA',
   },
 ]
 

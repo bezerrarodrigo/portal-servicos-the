@@ -474,6 +474,11 @@ const allServices = [
     text: 'Certidão Conjunta Positiva com Efeito de Negativa de Débitos Municipais e da Dívida Ativa do Município',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=PES_CCPENDA',
   },
+  {
+    id: 96,
+    text: 'Emissão de Alvará Taxista/Mototaxistas',
+    href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=MOB_ALVARA',
+  },
 ]
 
 const uniqueServices = Array.from(
