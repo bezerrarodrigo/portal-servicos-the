@@ -128,7 +128,7 @@ const itbiItems = [
   },
   {
     text: 'Certidão Negativa de Transferência Imobiliária',
-    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/certidao/certidaoPortalData.jsf?faces-redirect=true',
+    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/certidao/certidaoPortalList.jsf',
   },
   {
     text: 'Reemitir Certidão/Declaração',
