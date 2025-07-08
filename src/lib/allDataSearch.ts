@@ -479,10 +479,10 @@ const allServices = [
     text: 'Emissão de Alvará Taxista/Mototaxistas',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=MOB_ALVARA',
   },
-]
+];
 
 const uniqueServices = Array.from(
   new Map(allServices.map((service) => [service.text, service])).values(),
-)
+);
 
-export const filteredServices = uniqueServices
+export const filteredServices = uniqueServices;
