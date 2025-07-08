@@ -157,7 +157,7 @@ const allServices = [
   {
     id: 32,
     text: 'Certidão Negativa de Transferência Imobiliária',
-    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/certidao/certidaoPortalData.jsf?faces-redirect=true',
+    href: 'https://novoitbie.teresina.pi.gov.br/itbi/paginas/certidao/certidaoPortalList.jsf',
   },
   {
     id: 33,
@@ -479,10 +479,10 @@ const allServices = [
     text: 'Emissão de Alvará Taxista/Mototaxistas',
     href: 'https://portal.teresina.pi.gov.br/dsf_the_portal/inicial.do?evento=montaMenu&acronym=MOB_ALVARA',
   },
-]
+];
 
 const uniqueServices = Array.from(
   new Map(allServices.map((service) => [service.text, service])).values(),
-)
+);
 
-export const filteredServices = uniqueServices
+export const filteredServices = uniqueServices;
